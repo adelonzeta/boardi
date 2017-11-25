@@ -8,6 +8,7 @@ module.exports = function() {
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [
+        'node_modules/normalize.css',
         'node_modules/bourbon/core',
         'node_modules/bourbon-neat/app/assets/stylesheets',
         'node_modules/font-awesome/scss'
