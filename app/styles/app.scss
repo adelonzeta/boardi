@@ -1,5 +1,29 @@
-@import 'normalize';
+// 3rd Party
 @import 'bourbon';
 @import 'neat';
+
+@import 'normalize';
 @import 'font-awesome';
+
+
+// Modules
 @import 'base/module';
+
+.navbar,
+.footer {
+  background: $dark-gray;
+  color: tint($black, 100%);
+  padding: $base-spacing;
+  text-align: center;
+
+  a {
+    color: tint($black, 100%);
+  }
+}
+
+.wrapper {
+  display: block;
+  margin: $base-spacing auto;
+  max-width: 960px;
+  padding: $base-spacing;
+}
